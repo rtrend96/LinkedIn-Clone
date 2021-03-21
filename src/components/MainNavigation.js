@@ -5,11 +5,13 @@ import {
   ChatRightText,
   HouseDoorFill,
   People,
+  Power,
 } from 'react-bootstrap-icons';
 import { Link } from 'react-router-dom';
 import './MainNavigation.css';
 import { useSelector } from 'react-redux';
 import { selectUser } from '../features/userSlice';
+import db, { auth } from '../firebase';
 
 const MainNavigation = () => {
   const [currentKey, setCurrentKey] = useState(1);
@@ -96,6 +98,15 @@ const MainNavigation = () => {
               />
               <p className="mb-0">Profile</p>
             </div>
+          </Nav.Link>
+          <Nav.Link eventKey={currentKey} className="text-white">
+            <div   onClick={() => auth.signOut()} className="d-flex flex-column align-items-center">
+              <Power className="nav-icons"/>
+              <p>Logout</p>
+            </div>
+          </Nav.Link>
+          <Nav.Link>
+         
           </Nav.Link>
         </Nav>
       </Navbar.Collapse>

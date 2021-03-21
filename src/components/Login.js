@@ -15,7 +15,8 @@ const Login = () => {
           src="https://www.flaticon.com/svg/static/icons/svg/174/174857.svg"
           alt="logo"
         />
-        <h1>LinkedIn</h1>
+        <h1>LinkedIn-Clone</h1>
+        
       </div>
       <Button onClick={signIn}>Sign in</Button>
     </div>

@@ -9,7 +9,9 @@
 
 .login > div > img {
   object-fit: contain;
-  height: 150px;
+  height: 265px;
+  align-items: center;
+  
 }
 
 .login > button {

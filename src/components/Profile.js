@@ -73,7 +73,6 @@ const Profile = () => {
           className="profile-pic rounded-circle shadow"
           alt="profile"
           src={user.photo}
-          onClick={() => auth.signOut()}
         />
         <Card.Body className="mt-5">
           <h4 className="profile-text">{user.displayName}</h4>
